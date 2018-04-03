@@ -1,0 +1,96 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0
+}
+
+.flt {
+  float: left;
+}
+
+.frt {
+  float: right;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000
+}
+
+/* 开始过渡阶段,动画出去阶段 */
+
+.left-enter-active,
+.left-leave-active,
+.right-enter-active,
+.right-leave-active {
+  transition: all 1s ease-out;
+}
+
+/* 进入开始 */
+
+.left-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.right-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* 出去终点 */
+
+.left-leave-active {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.right-leave-active {
+  transform: translateX(100%);
+  opacity: 0;
+}
