@@ -1,6 +1,3 @@
-# vueddyu
-
-> 第一个vue的项目
 
 ## Build Setup
 
